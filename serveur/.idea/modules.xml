@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../afficheur/.idea/afficheur.iml" filepath="$PROJECT_DIR$/../afficheur/.idea/afficheur.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/serveur.iml" filepath="$PROJECT_DIR$/.idea/serveur.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../watchdog/.idea/watchdog.iml" filepath="$PROJECT_DIR$/../watchdog/.idea/watchdog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../syscall/.idea/syscall.iml" filepath="$PROJECT_DIR$/../syscall/.idea/syscall.iml" />
     </modules>
   </component>
 </project>

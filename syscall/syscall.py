@@ -1,4 +1,4 @@
-class Watchdog:
+class Syscall:
 
     def __init__(self,trame):
         self.trame = trame
