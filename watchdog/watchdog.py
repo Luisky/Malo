@@ -1,0 +1,8 @@
+class Watchdog:
+
+    def __init__(self,trame):
+        self.trame = trame
+
+    def _parse(self):
+        if self.trame[1] == 0x02:
+            print("reboot")

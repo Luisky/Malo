@@ -1,4 +1,6 @@
-import afficheur
+import afficheur, watchdog
+
+
 class DataHandler:
 
     def __init__(self, data):
@@ -15,6 +17,4 @@ class DataHandler:
             aff = afficheur.Afficheur("192.168.15.10", 502)
             aff.msg(self.data[1:])
         elif self.data[0] == 0xFF:
-            
-
-
+            watchdog.Watchdog(self.data)

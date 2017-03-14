@@ -16,7 +16,7 @@ class Afficheur:
             self.socket.connect((self.ip, self.port))
         except OSError as m:
             self.socket.close()
-            print("error no connection")
+            print("error no connection {}".format(m))
             sys.exit(1)
 
     def _trame(self, mess):
@@ -29,7 +29,7 @@ class Afficheur:
         self._write()
         print(self.trame_demande)
 
-    def _encode(self,msg):
+    def _encode(self, msg):
         if not type(msg) == bytes:
             return msg.encode()
         else:
