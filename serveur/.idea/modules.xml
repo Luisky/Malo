@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../afficheur/.idea/afficheur.iml" filepath="$PROJECT_DIR$/../afficheur/.idea/afficheur.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/serveur.iml" filepath="$PROJECT_DIR$/.idea/serveur.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../watchdog/.idea/watchdog.iml" filepath="$PROJECT_DIR$/../watchdog/.idea/watchdog.iml" />
     </modules>
   </component>
 </project>
