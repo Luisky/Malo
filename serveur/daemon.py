@@ -58,7 +58,7 @@ class Daemon:
             sys.exit(1)
 
         self.daemonize()
-        self.run()
+        self.deamonize()
 
     def stop(self):
         try:
@@ -90,6 +90,6 @@ class Daemon:
         self.stop()
         self.start()
 
-    def run(self):
+    def deamonize(self):
         """must be override"""
 

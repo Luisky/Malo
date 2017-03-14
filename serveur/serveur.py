@@ -1,4 +1,10 @@
-import socket, threading, trame_handler
+import socket, threading, trame_handler,sys
+from daemon import Daemon
+
+
+class MyDaemon(Daemon):
+    def deamonize(self):
+        serv()
 
 
 class ServerThread(threading.Thread):
@@ -29,4 +35,18 @@ def serv():
         print(threading.active_count())
 
 if __name__ == "__main__":
-    serv()
+    daemon = MyDaemon('/tmp/server_daemon.pid')
+    if len(sys.argv) == 2:
+        if sys.argv[1] == 'start':
+            daemon.start()
+        elif sys.argv[1] == 'stop':
+            daemon.stop()
+        elif sys.argv[1] == 'restart':
+            daemon.restart()
+        else:
+            print("unknow command")
+            sys.exit(2)
+        sys.exit(0)
+    else:
+        print("usage %s start|stop|restart" % sys.argv[0])
+        sys.exit(2)
