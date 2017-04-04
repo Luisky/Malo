@@ -58,7 +58,7 @@ class Daemon:
             sys.exit(1)
 
         self.daemonize()
-        self.deamonize()
+        self.deamonize()  # u need to do it twice.
 
     def stop(self):
         try:
