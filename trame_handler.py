@@ -6,7 +6,7 @@ class DataHandler:
     def __init__(self, data):
         self.data = data
         self._aff()
-        self._identify()
+        #self._identify()
 
     def _aff(self):
         print(self.data)
