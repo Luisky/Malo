@@ -1,5 +1,5 @@
 import socket, threading, trame_handler,sys
-from daemon import Daemon
+from daemon  import Daemon
 
 
 class MyDaemon(Daemon):
