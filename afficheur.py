@@ -38,7 +38,7 @@ class Afficheur:
     def _write(self):
         self.socket.send(self.trame_demande)
         print("send")
-        self.socket.close()
+        
 
     def clean(self, line=0):
         if line == 0:
@@ -50,4 +50,5 @@ class Afficheur:
         if len(msg) > 100:
             msg = msg[:100]
         return msg
-
+    def closeSocket(self):
+        self.socket.close()
